@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgPrevious"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="12dp"
+        android:rotation="90"
+        app:srcCompat="@drawable/ic_hide"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/txtSleepTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/imgPrevious"
+        android:layout_toRightOf="@+id/imgPrevious"
+        android:text="Sleep Timer"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSleepTimer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp">
+
+        <RadioButton
+            android:id="@+id/radOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Off"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rad30M"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="30 minutes"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rad1H"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="1 hour"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rad1H30M"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="1 hour 30 minutes"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rad2H"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="2 hours"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Custom"
+            android:textSize="18sp" />
+    </RadioGroup>
+</RelativeLayout>
